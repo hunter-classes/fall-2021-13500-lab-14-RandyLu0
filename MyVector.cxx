@@ -3,7 +3,7 @@
 template<class T>
 MyVector<T>::MyVector(){
     s = 0;
-    c = 2;
+    c = 1;
     vector = new T[c];
 }
 
@@ -34,24 +34,15 @@ void MyVector<T>::pop_back() { --s; }
 
 template<class T>
 void MyVector<T>::pop_back(int n){
-    if(n < s)
+    if(n < s) {
         for (int i = n; i < s - 1; ++i)
             vector[i] = vector[i + 1];
-    --s;
+        --s;
+    }
 }
 
 template<class T>
 void MyVector<T>::clear() {s = 0; }
 
 template<class T>
-T& MyVector<T>::operator[] (int i){ return vector[i]; }
-
-template<class T>
-void MyVector<T>::print(){
-    for(int i = 0; i < s; i++)
-        cout << vector[i] << " ";
-    cout << "\n";
-}
-
-
-
+T &MyVector<T>::operator[] (int i){ return vector[i]; }

@@ -17,7 +17,6 @@ public:
     void pop_back();
     void clear();
     T &operator[] (int i);
-    void print();
 
 private:
     int s;

@@ -1,4 +1,3 @@
-
 #include "MyVector.h"
 #include <iostream>
 using std::cout;
@@ -11,10 +10,11 @@ int main(){
     m.push_back(4);
     m.push_back(5);
     m.pop_back(1);
+    m.clear();
     m[3] = 9;
-    m.print();
     cout << m.capacity() << "\n";
-    //cout << m[3] << "\n";
+    cout << m.empty() << "\n";
+    cout << m[3] << "\n";
     return 0;
 }
 
