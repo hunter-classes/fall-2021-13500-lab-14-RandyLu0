@@ -2,9 +2,6 @@
 #ifndef INC_14_MYVECTOR_H
 #define INC_14_MYVECTOR_H
 
-#include <iostream>
-using std::cout;
-
 template<class T>
 class MyVector {
 public:
@@ -18,7 +15,6 @@ public:
     void pop_back();
     void clear();
     T &operator[] (int i);
-
 private:
     int s;
     int c;
