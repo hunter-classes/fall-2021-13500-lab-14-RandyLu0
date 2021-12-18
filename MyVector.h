@@ -9,6 +9,7 @@ template<class T>
 class MyVector {
 public:
     MyVector();
+    ~MyVector();
     int size();
     int capacity();
     bool empty();

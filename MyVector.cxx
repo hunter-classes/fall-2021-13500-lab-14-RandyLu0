@@ -8,6 +8,11 @@ MyVector<T>::MyVector(){
 }
 
 template<class T>
+MyVector<T>::~MyVector<T>() {
+    delete[] vector;
+}
+
+template<class T>
 int MyVector<T>::size() { return s; }
 
 template<class T>
@@ -20,11 +25,10 @@ template<class T>
 void MyVector<T>::push_back(T item){
     if(s < c) vector[s++] = item;
     else{
-        T v[c];
+        T* v = new T[c *= 2];
         for (int i = 0; i < s; ++i) v[i] = vector[i];
         delete[] vector;
-        vector = new T[c*= 2];
-        for(int i = 0; i <  s; i++) vector[i] = v[i];
+        vector = v;
         vector[s++] = item;
     }
 }
