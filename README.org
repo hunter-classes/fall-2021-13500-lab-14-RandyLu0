@@ -6,7 +6,7 @@
 
 * GitHub username: RandyLu0
 
-* Notes: The popback(n) method removes element at index n if n is in range otherwise does nothing.
+* Notes: The popback(n) method removes element at index n if possible otherwise does nothing.
 
 
   
