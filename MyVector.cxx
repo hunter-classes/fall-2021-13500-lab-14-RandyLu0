@@ -8,9 +8,7 @@ MyVector<T>::MyVector(){
 }
 
 template<class T>
-MyVector<T>::~MyVector(){
-    delete[] vector;
-}
+MyVector<T>::~MyVector(){ delete[] vector; }
 
 template<class T>
 int MyVector<T>::size() { return s; }
