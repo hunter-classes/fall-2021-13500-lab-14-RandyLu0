@@ -7,9 +7,9 @@ class MyVector {
 public:
     MyVector();
     ~MyVector();
-    int size();
-    int capacity();
-    bool empty();
+    int size() const;
+    int capacity() const;
+    bool empty() const;
     void push_back(T item);
     void pop_back(int n);
     void pop_back();

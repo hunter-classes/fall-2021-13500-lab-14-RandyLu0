@@ -13,13 +13,13 @@ MyVector<T>::~MyVector(){
 }
 
 template<class T>
-int MyVector<T>::size() { return s; }
+int MyVector<T>::size() const { return s; }
 
 template<class T>
-int MyVector<T>::capacity() { return c; }
+int MyVector<T>::capacity() const { return c; }
 
 template<class T>
-bool MyVector<T>::empty() { return !s; }
+bool MyVector<T>::empty() const { return !s; }
 
 template<class T>
 void MyVector<T>::push_back(T item){
