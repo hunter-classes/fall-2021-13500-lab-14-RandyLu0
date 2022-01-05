@@ -27,7 +27,6 @@ void MyVector<T>::push_back(T item){
         T* v = new T[c *= 2];
         for(int i = 0; i < s; ++i) v[i] = vector[i];
         delete[] vector;
-        vector = nullptr;
         vector = v;
     }
     vector[s++] = item;
