@@ -3,8 +3,7 @@
 template<class T>
 MyVector<T>::MyVector(){
     s = 0;
-    c = 1;
-    vector = new T[c];
+    vector = new T[c = 1];
 }
 
 template<class T>
